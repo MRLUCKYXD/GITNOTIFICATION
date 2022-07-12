@@ -57,11 +57,11 @@ def help(update: Update, context: CallbackContext):
     pic = "https://telegra.ph/file/18155a81e0d3f0e71fd09.jpg"
     buttons1 = [
             [
-              InlineKeyboardButton("Owner", url=f"https://t.me/{DEVELOPER}"),
-              InlineKeyboardButton ("Updates", url=f"https://t.me/{UPDATES}"),
+              InlineKeyboardButton("🍒 ᴏᴡɴᴇʀ", url=f"https://t.me/{DEVELOPER}"),
+              InlineKeyboardButton ("ᴜᴘᴅᴀᴛᴇꜱ 🍒", url=f"https://t.me/{UPDATES}"),
             ],
             [
-             InlineKeyboardButton("Source", url=f"https://github.com/{SOURCE}")],
+             InlineKeyboardButton("🍒 ꜱᴏᴜʀᴄᴇ 🍒", url=f"https://github.com/{SOURCE}")],
        ]
     markup_lol = InlineKeyboardMarkup(buttons1)
     update.message.reply_photo(photo=pic, caption=textto, reply_markup=markup_lol)
@@ -74,8 +74,8 @@ def lol(update: Update, context: CallbackContext):
     
     buttons = [
              [
-               InlineKeyboardButton("Support", url="https://t.me/TeamXScenario"),
-               InlineKeyboardButton("Updates", url=f"https://t.me/{UPDATES}"),
+               InlineKeyboardButton("🍹 ꜱᴜᴘᴘᴏʀᴛ ", url="https://t.me/Terayaarhoomai"),
+               InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇꜱ 🍹", url=f"https://t.me/{UPDATES}"),
              ],
              [InlineKeyboardButton("Source", url=f"https://github.com/{SOURCE}")],  
           ]
