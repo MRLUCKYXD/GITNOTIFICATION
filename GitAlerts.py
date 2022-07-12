@@ -275,18 +275,18 @@ def git_api(groupid):
             return response
 
         if data.get('action') == "started":
-            text = f"💘 <a href='{data['sender']['html_url']}'>{data['sender']['login']}</a> gave a star to <a href='{data['repository']['html_url']}'>{data['repository']['name']}</a>!\nTotal stars are now {data['repository']['stargazers_count']}"
+            text = f"💘 <a href='{data['sender']['html_url']}'>{data['sender']['login']}</a> ɢᴀᴠᴇ ᴀ ꜱᴛᴀʀ ᴛᴏ <a href='{data['repository']['html_url']}'>{data['repository']['name']}</a>!\nᴛᴏᴛᴀʟ ꜱᴛᴀʀꜱ ᴀʀᴇ ɴᴏᴡ {data['repository']['stargazers_count']}"
             response = post_tg(groupid, text, "html")
             return response
 
         if data.get('action') == "edited" and data.get('release'):
             text = f"<a href='{data['sender']['html_url']}'>{data['sender']['login']}</a> {data['action']} <a href='{data['repository']['html_url']}'>{data['repository']['name']}</a>!"
-            text += f"\n\n<b>{data['release']['name']}</b> ({data['release']['tag_name']})\n{data['release']['body']}\n\n<a href='{data['release']['tarball_url']}'>Download tar</a> | <a href='{data['release']['zipball_url']}'>Download zip</a>"
+            text += f"\n\n<b>{data['release']['name']}</b> ({data['release']['tag_name']})\n{data['release']['body']}\n\n<a href='{data['release']['tarball_url']}'>ᴅᴏᴡɴʟᴏᴀᴅ ᴛᴀʀ</a> | <a href='{data['release']['zipball_url']}'>ᴅᴏᴡɴʟᴏᴀᴅ ᴢɪᴘ</a>"
             response = post_tg(groupid, text, "html")
             return response
 
         if data.get('action') == "created":
-            return jsonify({"ok": True, "text": "Pass trigger for created"})
+            return jsonify({"ok": True, "text": "ᴘᴀꜱꜱ ᴛʀɪɢɢᴇʀ ꜰᴏʀ ᴄʀᴇᴀᴛᴇᴅ"})
 
         response = post_tg(
             groupid,
@@ -297,30 +297,30 @@ def git_api(groupid):
     if data.get('ref_type'):
         response = post_tg(
             groupid,
-            f"A new {data['ref_type']} on <a href='{data['repository']['html_url']}'>{data['repository']['name']}</a> was created by <a href='{data['sender']['html_url']}'>{data['sender']['login']}</a>!",
+            f"ᴀ ɴᴇᴡ {data['ref_type']} ᴏɴ <a href='{data['repository']['html_url']}'>{data['repository']['name']}</a> ᴡᴀꜱ ᴄʀᴇᴀᴛᴇᴅ ʙʏ <a href='{data['sender']['html_url']}'>{data['sender']['login']}</a>!",
             "html")
         return response
 
     if data.get('created'):
         response = post_tg(groupid,
-                           f"Branch {data['ref'].split('/')[-1]} <b>{data['ref'].split('/')[-2]}</b> on <a href='{data['repository']['html_url']}'>{data['repository']['name']}</a> was created by <a href='{data['sender']['html_url']}'>{data['sender']['login']}</a>!",
+                           f"ʙʀᴀɴᴄʜ {data['ref'].split('/')[-1]} <b>{data['ref'].split('/')[-2]}</b> ᴏɴ <a href='{data['repository']['html_url']}'>{data['repository']['name']}</a> ᴡᴀꜱ ᴄʀᴇᴀᴛᴇᴅ ʙʏ <a href='{data['sender']['html_url']}'>{data['sender']['login']}</a>!",
                            "html")
         return response
 
     if data.get('deleted'):
         response = post_tg(groupid,
-                           f"Branch {data['ref'].split('/')[-1]} <b>{data['ref'].split('/')[-2]}</b> on <a href='{data['repository']['html_url']}'>{data['repository']['name']}</a> was deleted by <a href='{data['sender']['html_url']}'>{data['sender']['login']}</a>!",
+                           f"ʙʀᴀɴᴄʜ {data['ref'].split('/')[-1]} <b>{data['ref'].split('/')[-2]}</b> ᴏɴ <a href='{data['repository']['html_url']}'>{data['repository']['name']}</a> ᴡᴀꜱ ᴅᴇʟᴇᴛᴇᴅ ʙʏ <a href='{data['sender']['html_url']}'>{data['sender']['login']}</a>!",
                            "html")
         return response
     xx = bytearray.fromhex("43 6F 64 65 72 58").decode()
     fck = bytearray.fromhex("54 65 61 6D 53 63 65 6E 61 72 69 6F 2F 47 69 74 41 6C 65 72 74 73").decode()
     dkb = bytearray.fromhex("54 65 61 6D 53 63 65 6E 61 72 69 6F").decode()
     if DEVELOPER != xx:
-       print("So sad, you have change developer, change it back to CoderX else I won't work")
+       print("ꜱᴏ ꜱᴀᴅ, ʏᴏᴜ ʜᴀᴠᴇ ᴄʜᴀɴɢᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀ, ᴄʜᴀɴɢᴇ ɪᴛ ʙᴀᴄᴋ ᴛᴏ ʟᴜᴄᴋʏ ᴇʟꜱᴇ ɪ ᴡᴏɴ'ᴛ ᴡᴏʀᴋ")
        sys.exit(1)
 
     if SOURCE != fck:
-       print("So sad, you have changed source, change it back to TeamScenario/GitAlerts else I won't work")
+       print("ꜱᴏ ꜱᴀᴅ, ʏᴏᴜ ʜᴀᴠᴇ ᴄʜᴀɴɢᴇᴅ ꜱᴏᴜʀᴄᴇ, ᴄʜᴀɴɢᴇ ɪᴛ ʙᴀᴄᴋ ᴛᴏ ᴍʀʟᴜᴄᴋʏxᴅ/ɢɪᴛɴᴏᴛɪꜰɪᴄᴀᴛɪᴏɴ ᴇʟꜱᴇ ɪ ᴡᴏɴᴛ ᴡᴏʀᴋ")
        sys.exit(1)
 
     if UPDATES != dkb:
