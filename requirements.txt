@@ -1,4 +1,4 @@
 Flask
 requests
-python-telegram-bot==12.8
-GitGram
+python-telegram-bot
+
