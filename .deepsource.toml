@@ -13,3 +13,4 @@ enabled = true
 
   [analyzers.meta]
   dockerfile_paths = [".gitpod.Dockerfile"]
+
