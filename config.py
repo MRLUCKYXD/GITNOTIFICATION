@@ -1,8 +1,8 @@
-# Your Bot token in the quotes taken from @BotFather on Telegram
-BOT_TOKEN = "5020504303:AAElG7ieBhOGHDJOgO3Ky0qq8ssTRAeWDTo"
-#add your 
+# Your Bot token in the quotes from @BotFather
+BOT_TOKEN = "" 
 # Project Name of your Project
-PROJECT_NAME = "GitGram"
-#dont change 
-# If you forked the Repository, grab your repo's link and paste it below!
-GIT_REPO_URL = "https://github.com/AnonymousBoy1025/GitGram"
+PROJECT_NAME = "GitAlerts" 
+# If you forked the source code, grab your repo's link and paste it below!
+GIT_REPO_URL = "https://github.com/KingAbishnoi/GitNotification" 
+# For /connect
+HEROKU_APPNAME = "gitalertbot"  
