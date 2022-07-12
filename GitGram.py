@@ -12,7 +12,7 @@ from telegram.ext import CommandHandler, Updater
 server = Flask(__name__)
 
 basicConfig(level=INFO)
-log = getLogger()
+log = getLogger() 
 
 ENV = bool(environ.get('ENV', False))
 
