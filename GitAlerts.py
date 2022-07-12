@@ -329,9 +329,9 @@ def git_api(groupid):
 
     if data.get('forced'):
         response = post_tg(groupid,
-                           f"Branch {data['ref'].split('/')[-1]} <b>{data['ref'].split('/')[-2]}</b>" +
-                           " on <a href='{data['repository']['html_url']}'>{data['repository']['name']}</a> was" +
-                           " forced by <a href='{data['sender']['html_url']}'>{data['sender']['login']}</a>!",
+                           f"ʙʀᴀɴᴄʜ {data['ref'].split('/')[-1]} <b>{data['ref'].split('/')[-2]}</b>" +
+                           " ᴏɴ <a href='{data['repository']['html_url']}'>{data['repository']['name']}</a> was" +
+                           " ꜰᴏʀᴄᴇᴅ ʙʏ <a href='{data['sender']['html_url']}'>{data['sender']['login']}</a>!",
                            "html")
         return response
 
@@ -348,11 +348,11 @@ def git_api(groupid):
         return response
 
     if data.get('context'):
-        if data.get('state') == "pending":
+        if data.get('state') == "ᴘᴇɴᴅɪɴɢ":
             emo = "⏳"
-        elif data.get('state') == "success":
+        elif data.get('state') == "ꜱᴜᴄᴄᴇꜱꜱ":
             emo = "✅"
-        elif data.get('state') == "failure":
+        elif data.get('state') == "ꜰᴀɪʟᴜʀᴇ":
             emo = "❌"
         else:
             emo = "🔰"
@@ -368,8 +368,8 @@ def git_api(groupid):
     url = deldog(data)
     response = post_tg(
         groupid,
-        "🚫« Webhook endpoint for this chat has received something that doesn't understood yet. " +
-        f"\n\nLink to logs for debugging: {url}",
+        "🚫« ᴡᴇʙʜᴏᴏᴋ ᴇɴᴅᴘᴏɪɴᴛ ꜰᴏʀ ᴛʜɪꜱ ᴄʜᴀᴛ ʜᴀꜱ ʀᴇᴄᴇɪᴠᴇᴅ ꜱᴏᴍᴇᴛʜɪɴɢ ᴛʜᴀᴛ ᴅᴏᴇꜱɴ't ᴜɴᴅᴇʀꜱᴛᴏᴏᴅ ʏᴇᴛ. " +
+        f"\n\nʟɪɴᴋ ᴛᴏ ʟᴏɢꜱ ꜰᴏʀ ᴅᴇʙᴜɢɢɪɴɢ: {url}",
         "markdown")
     return response
 
