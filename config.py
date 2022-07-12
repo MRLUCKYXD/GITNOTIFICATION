@@ -3,6 +3,6 @@ BOT_TOKEN = ""
 # Project Name of your Project
 PROJECT_NAME = "GitAlerts" 
 # If you forked the source code, grab your repo's link and paste it below!
-GIT_REPO_URL = "https://github.com/KingAbishnoi/GitNotification" 
+GIT_REPO_URL = "https://github.com/mrluckyxd/GitNotification" 
 # For /connect
-HEROKU_APPNAME = "gitalertbot"  
+HEROKU_APPNAME = "git-notifybot"  
