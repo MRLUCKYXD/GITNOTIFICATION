@@ -8,7 +8,7 @@
 
 The easiest way to host this bot, deploy to Heroku, Change the app country to Europe (it will help to make the bot more stable).
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/AnonymousBoy1025/GitGram"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="200" height="35.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/mrluckyxd/gitnotification"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="200" height="35.45"/></a></p>
 
 <h4> Fill all the required variables on heroku, after that follow the steps - </h4>
 
@@ -24,7 +24,7 @@ The easiest way to host this bot, deploy to Heroku, Change the app country to Eu
 
 ## ᴇxᴀᴍᴩʟᴇ ᴏғ ᴀɴ ᴡᴇʙʜᴏᴏᴋ 👇🏻:
 
-<p align="center"><a href="https://t.me/DevilsHeavenMF"><img src="https://telegra.ph/file/c694e61f7faa468ee136d.jpg"></a></p>
+<p align="center"><a href="https://t.me/terayaarhoomai"><img src="https://telegra.ph/file/c694e61f7faa468ee136d.jpg"></a></p>
 
 # ᴅᴇᴩʟᴏʏ ᴏɴ ᴠᴩs:
 - Install all requirements, `pip3 install -r requirements.txt`
@@ -35,7 +35,7 @@ The easiest way to host this bot, deploy to Heroku, Change the app country to Eu
 
 ## ᴅᴇᴩʟᴏʏ ᴏɴ ɢɪᴛᴩᴏᴅ 🚀:
 
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AnonymousBoy1025/GitGram)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/mrluckyxd/Gitnotification)
 
 
 ## ᴛʀʏ ᴏɴ ɢɪᴛᴩᴏᴅ:
